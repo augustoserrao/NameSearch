@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ValueConverters\ResultToForegroundVC.cs" />
+    <Compile Include="ValueConverters\ResultToMessageVC.cs" />
+    <Compile Include="ValueConverters\ResultToVisibilityVC.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +71,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NameFiles.cs" />
+    <Compile Include="NameSearchVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -92,6 +97,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\names.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\question_mark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BoyNames.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GirlNames.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
